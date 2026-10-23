@@ -1,0 +1,7 @@
+#!/bin/bash
+# 容器内 /root/run_qq.sh —— QQ 入口包装
+# 说明：实机的 /root/run_qq.sh 负责带 -q 免扫码参数并调用 supervisor.sh。
+# 这里给出等价的最小形态，请把 <BOT_QQ> 换成你的机器人 QQ 号。
+
+cd /root
+exec /bin/bash /root/supervisor.sh
